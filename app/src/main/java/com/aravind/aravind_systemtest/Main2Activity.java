@@ -199,7 +199,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     public void initlizeviews(){
         tvprice = findViewById(R.id.tv_totalprice);
 
-        tvprice.setText(stprice);
+        tvprice.setText("\u20B9"+stprice);
 
         tv_showmore = findViewById(R.id.tv_showmore);
         tv_showmore.setOnClickListener(this);
@@ -245,7 +245,8 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
             holder.tvtext1.setText(item.getScreen_text1());
             holder.tvtext2.setText(item.getScreen_text2());
-            holder.tvprice.setText(item.getPrice());
+            holder.tvprice.setText("\u20B9"+item.getPrice());
+
 
             if (position == 0) {
                 String s = String.valueOf(firstitemcount);

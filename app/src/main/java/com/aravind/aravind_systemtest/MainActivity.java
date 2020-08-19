@@ -142,14 +142,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return;
         }
 
-    }
+}
 
     public void opencart(){
         int coun = finalcount1+finalcount2+finalcount3;
         String s = String.valueOf(coun);
 
         String st = stopen1+stopen2+stopen3;
-        Toast.makeText(this, st, Toast.LENGTH_SHORT).show();
+     //   Toast.makeText(this, st, Toast.LENGTH_SHORT).show();
 
             if (st.equals("nullnullnull")){
                 Toast.makeText(this, "Please Select Item", Toast.LENGTH_SHORT).show();
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             holder.tvtext1.setText(item.getScreen_text1());
             holder.tvtext2.setText(item.getScreen_text2());
-            holder.tvprice.setText(item.getPrice());
+            holder.tvprice.setText("\u20B9"+item.getPrice());
 
             if (position == 0) {
                 String s = String.valueOf(firstitemcount);
